@@ -4,7 +4,10 @@
 
 import React, { useState, useEffect } from 'react'
 import "./App.css";
+import PhotoDisplay from "./photoDisplay.js"
+import Heading from "./heading.js"
 import axios from 'axios';
+
 
 
 
@@ -24,14 +27,17 @@ function App() {
  
   
   console.log(data);
-  
+  if(!data){
+    return null;
+  }
+
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p> 
-      {data && <img src={data.url} /> }
+
+      <Heading data={data}/>
+      <PhotoDisplay data={data}/>
+      
+      
     </div>
   );
 }
