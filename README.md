@@ -53,6 +53,7 @@ Follow these steps for completing your project.
 - [ ] Once you have a design plan in mind, break down the designs into individual components.
 - [ ] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
 - [ ] Now it's time to jump into the code!
+*created simple wire frame*
 
 **Step 2 - File structure**
 
