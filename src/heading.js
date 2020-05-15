@@ -20,6 +20,11 @@ const StyledHeading = styled.div`
     background-color: red;
   }
 
+  .photo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 `
 
 const Heading = (props) => {
