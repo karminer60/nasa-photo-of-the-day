@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
 
-      <Heading data={data}/>
+      <Heading data={data}/>  
       <PhotoDisplay data={data}/>
       
       
