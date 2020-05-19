@@ -2,23 +2,40 @@
 //add state for the data you'll be getting from NASA.
 //Add an effect hook to handle the API call side effect.
 
-import React from 'react'
+
 import "./App.css";
+import React, { useState} from 'react'
+
+import styled from 'styled-components'
+
+// reactstrap
+//import { Alert } from 'reactstrap'
+  
+const SecondPhotoDisplay = styled.div`
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+  
+
+`
 
 
 
 
 const PhotoDisplayAgain = (props) => {
-  //const [data, setData] = useState(); 
+  const [data2, setData2] = useState(); 
     const { data } = props
   
   return (
-    <div className="secondPhotoDisplay">
+    <SecondPhotoDisplay>
         <p>
             Photo of the Day Again 
         </p> 
       {data && <img src={data.url} /> }
-    </div>
+      {data2 && <img src={data2.url}/>}
+
+    </SecondPhotoDisplay>
   );
 }
 
